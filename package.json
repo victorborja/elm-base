@@ -27,7 +27,7 @@
     "watch-babel": "npm run babel-devel -- --watch",
     "watch-pack": "webpack --config .webpack.babel.js --watch --progress --colors",
     "browser": "browser-sync --config .browser-sync.js start",
-    "watch": "npm run watch-babel & npm run watch-sass & npm run watch-pack & npm run webdriver & (sleep 10 && (npm run browser & npm run karma))",
+    "watch": "npm run watch-elm && npm run watch-babel & npm run watch-sass & npm run watch-pack & npm run webdriver & (sleep 10 && (npm run browser & npm run karma))",
     "dev": "npm run clean && npm run compile-devel && npm run watch",
     "webdriver": "webdriver-manager start </dev/null 2>/dev/null",
     "protractor": "protractor .protractor.conf.js",
